@@ -71,7 +71,7 @@ python app.py
 ```
 2. Abra a URL no navegador
 ```plaintext
-http://127.0.0.1:5000/eventos
+http://127.0.0.1:5000/
 ```
 
 
