@@ -170,7 +170,7 @@ def eventos():
     except (FileNotFoundError, json.JSONDecodeError):
         lista = []
 
-    return render_template('aulas-eventos.html', eventos=lista)
+    return render_template('eventos.html', eventos=lista)
 
 #   Página de Adição de evento
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
