@@ -1,0 +1,64 @@
+{% extends "modelo.html" %}
+
+{% block conteudo %}
+
+<h1>Disciplinas</h1>
+
+<!-- Botão de Adição -->
+<a href="/disciplinas/add">
+    <button class="btn btn-success">Adicionar Disciplina</button>
+</a>
+
+<hr>
+
+<!-- Tabela de Disciplinas -->
+<section>
+    <table class="table align-middle table-hover table-responsive table-sm">
+
+        <!-- Legenda da Tabela -->
+        <thead class="thead-default">
+            <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Carga Horária</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+
+        <tbody class="table-group-divider">
+            {% for item in disciplinas %}
+
+            <tr class="table-group-divider">
+
+                <!-- Disciplina -->
+                <td class="sep"><b>{{ item["nome"] }}</b></td>
+
+                <!-- Descrição -->
+                <td class="sep text-start p-2">{{ item["descricao"] }}.</td>
+
+                <!-- Carga Horária -->
+                <td class="sep">{{ item["carga"] }}h</td>
+
+                <!-- Ações -->
+                <td class="sep">
+
+                    <!-- Editar -->
+                    <a href="/disciplinas/edit/{{ loop.index - 1 }}">
+                        <button class="btn btn-padrao">Editar</button>
+                    </a>
+
+                    <!-- Apagar -->
+                    <form action="{{ url_for('disc_del') }}" method="post">
+                        <input type="hidden" id="disc_id" name="disc_id" value="{{ loop.index - 1 }}">
+                        <button type="submit" class="btn btn-danger"
+                            onclick="return confirm('Tem certeza que quer deletar a Diciplina: {{ item['nome'] }}?');">Apagar</button>
+                    </form>
+                </td>
+            </tr>
+
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+
+{% endblock %}

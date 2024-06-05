@@ -1,0 +1,24 @@
+{
+    "disciplinas": [
+        {
+            "nome": "IHC",
+            "descricao": "Design front-end, acessibilidade, interação humano-máquina",
+            "carga": "1"
+        },
+        {
+            "nome": "Redes",
+            "descricao": "Redes de computadores",
+            "carga": "12"
+        },
+        {
+            "nome": "Python",
+            "descricao": "flask C.R.U.D.  etc",
+            "carga": "12"
+        },
+        {
+            "nome": "JavaScript",
+            "descricao": "js ts bootstrap etc",
+            "carga": "26"
+        }
+    ]
+}
