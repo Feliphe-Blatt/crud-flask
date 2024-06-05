@@ -65,7 +65,7 @@ pip install Flask
 
 ## :running_man: Como Iniciar
 
-1. Bash (Dentro do diretório do projeto)
+1. Bash (Dentro do diretório do projeto, com a Venv iniciada)
 ```plaintext
 python app.py
 ```
