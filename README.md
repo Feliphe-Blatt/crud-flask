@@ -3,6 +3,12 @@
 > Este é um projeto simples de um gerenciador de disciplinas, eventos e aulas desenvolvido com Flask + BootStrap. O aplicativo permite criar, editar, listar e excluir. Armazenando os dados em arquivos JSON.
 
 
+# :desktop_computer: Preview
+
+
+<img src="static/img/Tela-inicial.png" alt="Preview tela" title="Preview tela" height="450px" width="200px"> <img src="static/img/disciplinas.png" alt="Preview tela" title="Preview tela" height="450px" width="200px"> <img src="static/img/disciplina-add.png" alt="Preview tela" title="Preview tela" height="450px" width="200px"> <img src="static/img/evento-add.png" alt="Preview tela" title="Preview tela" height="450px" width="200px"> 
+
+
 ## :bricks: Estrutura do Projeto
 
 ```plaintext
